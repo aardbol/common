@@ -1,6 +1,6 @@
 {
   "name": "bundle-verifier",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "GitHub Action to verify the committed bundle is up-to-date with the source",
   "main": "index.js",
   "author": "Red Hat",

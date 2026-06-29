@@ -1,6 +1,6 @@
 {
   "name": "@redhat-actions/action-io-generator",
-  "version": "1.5.0",
+  "version": "2.0.0",
   "description": "Automatically generate enums for your JavaScript action's inputs and outputs",
   "main": "dist/index.js",
   "repository": {
