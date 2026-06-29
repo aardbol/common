@@ -1,11 +1,13 @@
 import * as path from "path";
-import * as minimist from "minimist";
+import type { Opts } from "minimist";
+// eslint-disable-next-line @typescript-eslint/no-require-imports
+const minimist = require("minimist");
 
 import * as logger from "./util/logger";
 import generator from "./generator/generator";
 
 export async function cli(): Promise<void> {
-    const minimistOptions: minimist.Opts = {
+    const minimistOptions: Opts = {
         alias: {
             a: "actionYml",
             s: "silent",

@@ -10,7 +10,7 @@ Only the latest release is actively maintained with security fixes.
 
 Please report vulnerabilities privately via GitHub's **Private vulnerability reporting** tool:
 
-1. Go to the repository's [Security tab](https://github.com/aardbol/common/security)
+1. Go to the repository's [Security tab](https://github.com/aardbol-actions/common/security)
 2. Click **Report a vulnerability**
 3. Fill in the details
 

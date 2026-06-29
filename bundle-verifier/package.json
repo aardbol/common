@@ -1,5 +1,5 @@
 {
-  "name": "bundle-verifier",
+  "name": "@aardbol-actions/bundle-verifier",
   "version": "1.0.0",
   "description": "GitHub Action to verify the committed bundle is up-to-date with the source",
   "main": "index.js",
@@ -13,7 +13,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
-    "@redhat-actions/tsconfig": "^1.2.0",
+    "@aardbol-actions/tsconfig": "^2.0.0",
     "@types/node": "^26.0.1",
     "@vercel/ncc": "^0.44.0",
     "eslint": "^10.6.0",

@@ -1,9 +1,9 @@
 # Commit Data Action
 
-[![commit-data CI](https://github.com/aardbol/common/actions/workflows/ci-commit-data.yml/badge.svg)](https://github.com/aardbol/common/actions/workflows/ci-commit-data.yml)
+[![commit-data CI](https://github.com/aardbol-actions/common/actions/workflows/ci-commit-data.yml/badge.svg)](https://github.com/aardbol-actions/common/actions/workflows/ci-commit-data.yml)
 
-[![Tag](https://img.shields.io/github/v/tag/aardbol/common)](https://github.com/aardbol/common/tags)
-[![License](https://img.shields.io/github/license/aardbol/common)](./LICENSE)
+[![Tag](https://img.shields.io/github/v/tag/aardbol-actions/common)](https://github.com/aardbol-actions/common/tags)
+[![License](https://img.shields.io/github/license/aardbol-actions/common)](./LICENSE)
 
 This is a small action which captures some logic I'd find myself needing in lots of different workflows.
 

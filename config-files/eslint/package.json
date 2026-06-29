@@ -1,5 +1,5 @@
 {
-  "name": "@redhat-actions/eslint-config",
+  "name": "@aardbol-actions/eslint-config",
   "version": "2.0.0",
   "description": "ESLint config for GitHub Actions",
   "keywords": [
@@ -9,7 +9,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git@github.com:aardbol/common.git"
+    "url": "git@github.com:aardbol-actions/common.git"
   },
   "author": "Red Hat",
   "license": "MIT",

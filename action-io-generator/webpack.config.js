@@ -1,3 +1,3 @@
 //@ts-check
 
-module.exports = require("@redhat-actions/webpack-config")(__dirname);
+module.exports = require("@aardbol-actions/webpack-config")(__dirname);

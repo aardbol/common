@@ -1,10 +1,10 @@
 # GitHub Action Bundle Verifier
 
-[![bundle-verifier CI](https://github.com/aardbol/common/actions/workflows/verify-verifier.yml/badge.svg)](https://github.com/aardbol/common/actions/workflows/verify-verifier.yml)
+[![bundle-verifier CI](https://github.com/aardbol-actions/common/actions/workflows/verify-verifier.yml/badge.svg)](https://github.com/aardbol-actions/common/actions/workflows/verify-verifier.yml)
 
-[![Bundle Size](https://img.shields.io/github/size/aardbol/common/bundle-verifier/dist/index.js)](./dist/)
-[![Tag](https://img.shields.io/github/v/tag/aardbol/common)](https://github.com/aardbol/common/tags)
-[![License](https://img.shields.io/github/license/aardbol/common)](./LICENSE)
+[![Bundle Size](https://img.shields.io/github/size/aardbol-actions/common/bundle-verifier/dist/index.js)](./dist/)
+[![Tag](https://img.shields.io/github/v/tag/aardbol-actions/common)](https://github.com/aardbol-actions/common/tags)
+[![License](https://img.shields.io/github/license/aardbol-actions/common)](./LICENSE)
 
 GitHub Action repositories are unusual in that their production bundle is committed to the repository.
 

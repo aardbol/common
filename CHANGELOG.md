@@ -5,7 +5,7 @@
   `action-io-generator` Docker image (node:16-alpine→node:24-alpine),
   `commit-data` Docker image (alpine:3.12→alpine:3.23).
 - Migrate ESLint from legacy `.eslintrc.js` to flat config (`eslint.config.js`, ESLint 10).
-- Migrate `bundle-verifier` tsconfig to extend `@redhat-actions/tsconfig`.
+- Migrate `bundle-verifier` tsconfig to extend `@aardbol-actions/tsconfig`.
 - Add Vitest testing framework to `action-io-generator` and `bundle-verifier`.
 - Add security scanning: CodeQL, Trivy, OpenSSF Scorecards, Lychee link checker.
 - Add Dependabot with grouped PRs for npm and GitHub Actions.

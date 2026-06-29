@@ -1,14 +1,14 @@
 # Red Hat Actions Common
 
-[![action-io-generator CI](https://github.com/aardbol/common/actions/workflows/ci-action-io-generator.yml/badge.svg)](https://github.com/aardbol/common/actions/workflows/ci-action-io-generator.yml)
-[![bundle-verifier CI](https://github.com/aardbol/common/actions/workflows/verify-verifier.yml/badge.svg)](https://github.com/aardbol/common/actions/workflows/verify-verifier.yml)
-[![commit-data CI](https://github.com/aardbol/common/actions/workflows/ci-commit-data.yml/badge.svg)](https://github.com/aardbol/common/actions/workflows/ci-commit-data.yml)
-[![CodeQL](https://github.com/aardbol/common/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/aardbol/common/actions/workflows/codeql-analysis.yml)
-[![Trivy](https://github.com/aardbol/common/actions/workflows/trivy-scan.yml/badge.svg)](https://github.com/aardbol/common/actions/workflows/trivy-scan.yml)
-[![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/aardbol/common/badge)](https://securityscorecards.dev/viewer/?uri=github.com/aardbol/common)
+[![action-io-generator CI](https://github.com/aardbol-actions/common/actions/workflows/ci-action-io-generator.yml/badge.svg)](https://github.com/aardbol-actions/common/actions/workflows/ci-action-io-generator.yml)
+[![bundle-verifier CI](https://github.com/aardbol-actions/common/actions/workflows/verify-verifier.yml/badge.svg)](https://github.com/aardbol-actions/common/actions/workflows/verify-verifier.yml)
+[![commit-data CI](https://github.com/aardbol-actions/common/actions/workflows/ci-commit-data.yml/badge.svg)](https://github.com/aardbol-actions/common/actions/workflows/ci-commit-data.yml)
+[![CodeQL](https://github.com/aardbol-actions/common/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/aardbol-actions/common/actions/workflows/codeql-analysis.yml)
+[![Trivy](https://github.com/aardbol-actions/common/actions/workflows/trivy-scan.yml/badge.svg)](https://github.com/aardbol-actions/common/actions/workflows/trivy-scan.yml)
+[![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/aardbol-actions/common/badge)](https://securityscorecards.dev/viewer/?uri=github.com/aardbol-actions/common)
 
-[![Tag](https://img.shields.io/github/v/tag/aardbol/common)](https://github.com/aardbol/common/tags)
-[![License](https://img.shields.io/github/license/aardbol/common)](./LICENSE)
+[![Tag](https://img.shields.io/github/v/tag/aardbol-actions/common)](https://github.com/aardbol-actions/common/tags)
+[![License](https://img.shields.io/github/license/aardbol-actions/common)](./LICENSE)
 
 This repository contains the common Actions and config files for developing the Red Hat GitHub Actions.
 
