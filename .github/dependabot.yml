@@ -1,0 +1,55 @@
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: /action-io-generator
+    schedule:
+      interval: daily
+    groups:
+      actions-deps:
+        patterns:
+          - '@actions/*'
+      types:
+        patterns:
+          - '@types/*'
+      redhat-actions:
+        patterns:
+          - '@redhat-actions/*'
+      eslint:
+        patterns:
+          - eslint
+          - '@typescript-eslint/*'
+
+  - package-ecosystem: npm
+    directory: /bundle-verifier
+    schedule:
+      interval: daily
+    groups:
+      actions-deps:
+        patterns:
+          - '@actions/*'
+      types:
+        patterns:
+          - '@types/*'
+      redhat-actions:
+        patterns:
+          - '@redhat-actions/*'
+
+  - package-ecosystem: npm
+    directory: /config-files/eslint
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /config-files/tsconfig
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /config-files/webpack
+    schedule:
+      interval: daily
+
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: daily
