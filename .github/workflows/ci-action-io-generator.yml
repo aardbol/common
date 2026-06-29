@@ -11,29 +11,29 @@ defaults:
 jobs:
   lint:
     name: Run ESLint
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-24.04
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
       - run: npm ci
       - run: npm run lint
-  
+
   check-dist:
     name: Check Distribution
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-24.04
     env:
       BUNDLE_FILE: "dist/bin.js"
       BUNDLE_COMMAND: "npm run bundle"
       WORKDIR: "./action-io-generator"
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
 
       - name: Install
         working-directory: ${{ env.WORKDIR }}
         run: npm ci
 
       - name: Verify Latest Bundle
-        uses: redhat-actions/common/bundle-verifier@v1
+        uses: redhat-actions/common/bundle-verifier@a7e9fd367034e38805280ad71d9cc35e2d9f6f9d # v1
         with:
           bundle_file: ${{ env.BUNDLE_FILE }}
           bundle_command: ${{ env.BUNDLE_COMMAND }}
@@ -41,12 +41,12 @@ jobs:
   
   compile_test:
     name: Compile and test
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-24.04
     env:
       TEST_FILE: test/generated/inputs-outputs.ts
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
 
       - run: npm ci
       - run: npm run lint
