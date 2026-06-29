@@ -2,7 +2,9 @@
     "extends": "@redhat-actions/tsconfig",
     "compilerOptions": {
         "rootDir": "src/",
-        "outDir": "out/"
+        "outDir": "out/",
+        "ignoreDeprecations": "6.0",
+        "types": ["node"]
     },
     "include": [
         "src/"

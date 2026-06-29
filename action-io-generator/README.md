@@ -25,7 +25,8 @@ Outputting input and output enums to src/generated/inputs-outputs.ts
 ```
 
 ## Example
-See [test](./test) for an example. [generated/inputs-outputs.ts](./test/generated/inputs-outputs.ts) is generated from [test.action.yml](./test/test.action.yml).
+
+The [`test/generator.test.ts`](./test/generator.test.ts) test demonstrates the generator against a sample `action.yml` using Vitest.
 
 ```yaml
 inputs:
