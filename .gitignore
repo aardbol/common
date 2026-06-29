@@ -1,2 +1,5 @@
 *.tsbuildinfo
 node_modules/
+.zed/
+.opencode/
+.vscode/
