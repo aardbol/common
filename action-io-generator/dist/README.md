@@ -26,7 +26,7 @@ Outputting input and output enums to src/generated/inputs-outputs.ts
 
 ## Example
 
-The [`test/generator.test.ts`](./test/generator.test.ts) test demonstrates the generator against a sample `action.yml` using Vitest.
+The [`test/generator.test.ts`](https://github.com/aardbol-actions/common/blob/main/action-io-generator/test/generator.test.ts) test demonstrates the generator against a sample `action.yml` using Vitest.
 
 ```yaml
 inputs:
