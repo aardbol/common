@@ -22,7 +22,6 @@ export default async function generator(actionYmlFile: string, outFile: string, 
 
     let modifyingProm: Promise<unknown> | undefined;
 
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     fs.watch(actionYmlFile, async (_event: string, _filename: string | null) => {
         logger.log(`${actionYmlFile} changed`);
 
@@ -91,7 +90,6 @@ function enumify(enumName: string, inputsOrOutputs: [string, InputOrOutput][]): 
 
         const enumifiedName = name.toUpperCase().replace(/-/g, "_");
 
-        // eslint-disable-next-line no-param-reassign,operator-linebreak
         accumulator +=
 `${OUTPUT_INDENT}/**
 ${LINE_START} ${foldedDescription}

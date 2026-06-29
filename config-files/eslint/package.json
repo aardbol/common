@@ -18,8 +18,8 @@
     "eslint-plugin-import": ">=2"
   },
   "peerDependencies": {
-    "eslint": ">= 7",
-    "@typescript-eslint/parser": ">= 4",
-    "@typescript-eslint/eslint-plugin": ">= 4"
+    "eslint": ">= 8",
+    "@typescript-eslint/parser": ">= 7",
+    "@typescript-eslint/eslint-plugin": ">= 7"
   }
 }
