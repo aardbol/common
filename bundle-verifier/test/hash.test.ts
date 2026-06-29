@@ -35,4 +35,20 @@ describe("hash", () => {
 
         fs.rmSync(tmpDir, { recursive: true, force: true });
     });
+
+    it("produces a consistent hash for an empty file", async () => {
+        const { hash } = await import("../src/hash");
+
+        const tmpDir = fs.mkdtempSync(path.join(os.tmpdir(), "bv-hash-test-"));
+        const filePath = path.join(tmpDir, "empty.txt");
+        fs.writeFileSync(filePath, "", "utf-8");
+
+        const result1 = await hash(filePath);
+        const result2 = await hash(filePath);
+
+        expect(result1).toBe(result2);
+        expect(result1).toBeTruthy();
+
+        fs.rmSync(tmpDir, { recursive: true, force: true });
+    });
 });

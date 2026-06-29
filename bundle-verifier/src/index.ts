@@ -6,7 +6,7 @@ import * as path from "path";
 import { Inputs } from "./inputs";
 import { hash } from "./hash";
 
-async function moveBundleFile(bundleFilePath: string): Promise<string> {
+export async function moveBundleFile(bundleFilePath: string): Promise<string> {
     const bundleFileName = path.basename(bundleFilePath);
     const bundleFileDir = path.dirname(bundleFilePath);
 
@@ -61,5 +61,7 @@ async function run(): Promise<void> {
     ghCore.info(`Hashes matched!`);
 }
 
-run()
-    .catch(ghCore.setFailed);
+if (!process.env.VITEST) {
+    run()
+        .catch(ghCore.setFailed);
+}
