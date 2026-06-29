@@ -42,7 +42,7 @@
     "webpack-cli": "^5.1.4"
   },
   "dependencies": {
-    "js-yaml": "^3.14.1",
+    "js-yaml": "^5.2.0",
     "minimist": "^1.2.5"
   }
 }
