@@ -8,6 +8,7 @@
   "scripts": {
     "compile": "tsc -p .",
     "bundle": "ncc build src/index.ts --source-map --minify",
+    "test": "vitest run",
     "lint": "eslint . --max-warnings=0"
   },
   "devDependencies": {
@@ -17,7 +18,8 @@
     "@vercel/ncc": "^0.44.0",
     "eslint": "^10.6.0",
     "typescript": "^5.2.0",
-    "typescript-eslint": "^8.62.0"
+    "typescript-eslint": "^8.62.0",
+    "vitest": "^4.1.9"
   },
   "dependencies": {
     "@actions/core": "^3.0.0",

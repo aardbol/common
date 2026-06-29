@@ -39,11 +39,9 @@ jobs:
           bundle_command: ${{ env.BUNDLE_COMMAND }}
           working_directory: ${{ env.WORKDIR }}
   
-  compile_test:
-    name: Compile and test
+  test:
+    name: Test
     runs-on: ubuntu-24.04
-    env:
-      TEST_FILE: test/generated/inputs-outputs.ts
 
     steps:
       - uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
@@ -51,32 +49,4 @@ jobs:
       - run: npm ci
       - run: npm run lint
       - run: npm run compile
-      - run: npm run bundle
-
-      ##### End compile steps
-
-      - name: Prepare to test
-        run: rm -v ${{ env.TEST_FILE }}
-
-      - name: Test action-io-generator CLI
-        run: npm run test-cli
-
-      - name: Sniff test new enum file
-        shell: bash
-        run: |
-          set -x
-          [[ -f ${{ env.TEST_FILE }} ]]
-          grep "export enum Inputs" ${{ env.TEST_FILE }}
-          grep "export enum Outputs" ${{ env.TEST_FILE }}
-          LINES=$(wc -l ${{ env.TEST_FILE }} | awk '{ print $1 }')
-          (( LINES > 30 ))
-
-      - name: Debug failed test
-        if: failure()
-        run: cat ${{ env.TEST_FILE }}
-
-      - name: Clean up again
-        if: always()
-        run: rm -v ${{ env.TEST_FILE }}
-
-      ##### End test steps
+      - run: npm test

@@ -95,6 +95,6 @@ module.exports = tseslint.config(
     },
   },
   {
-    ignores: ["dist/", "node_modules/", "out/", "lib/", "bin.js", "test/", "webpack.config.js", ".eslintrc.js", "eslint.config.js"],
+    ignores: ["dist/", "node_modules/", "out/", "lib/", "bin.js", "test/", "webpack.config.js", "vitest.config.ts", ".eslintrc.js", "eslint.config.js"],
   },
 );
