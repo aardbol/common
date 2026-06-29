@@ -42,7 +42,7 @@ jobs:
       - name: Install npm dependencies
         run: |
           for dir in action-io-generator bundle-verifier config-files/eslint config-files/tsconfig config-files/webpack; do
-            if [ -f "$dir/package.json" ]; then
+            if [ -f "$dir/package-lock.json" ]; then
               (cd "$dir" && npm ci)
             fi
           done
