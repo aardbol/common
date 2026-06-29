@@ -1,11 +1,10 @@
-
 import * as ghCore from "@actions/core";
 import * as ghIO from "@actions/io";
 import * as ghExec from "@actions/exec";
 import * as path from "path";
 
 import { Inputs } from "./inputs";
-import { hash }  from "./hash";
+import { hash } from "./hash";
 
 async function moveBundleFile(bundleFilePath: string): Promise<string> {
     const bundleFileName = path.basename(bundleFilePath);
@@ -23,9 +22,9 @@ function getInputs(): Readonly<{
     workDir: string | undefined,
 }> {
     const workdirInput = ghCore.getInput(Inputs.WORKING_DIRECTORY);
-    const workDir: string | undefined = (workdirInput != null && workdirInput != "") ? workdirInput : undefined;
+    const workDir: string | undefined = (workdirInput !== "") ? workdirInput : undefined;
     if (workDir) {
-        ghCore.info(`Working directory is ${workDir}`)
+        ghCore.info(`Working directory is ${workDir}`);
     }
 
     const bundleCmd = ghCore.getInput(Inputs.BUNDLE_COMMAND, { required: true });
@@ -43,7 +42,7 @@ function getInputs(): Readonly<{
     };
 }
 
-async function run() {
+async function run(): Promise<void> {
     const { bundleCmd, bundleFile, workDir } = getInputs();
 
     const bundleFileHash = await hash(bundleFile);
@@ -63,4 +62,4 @@ async function run() {
 }
 
 run()
-.catch(ghCore.setFailed);
+    .catch(ghCore.setFailed);
